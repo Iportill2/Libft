@@ -35,10 +35,7 @@ The library includes the following categories of functions:
 5. File descriptor functions:
    - `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
 
-6. Linked list functions (bonus):
-   - `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`
-   - `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`
-   - `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+
 
 ## Compilation
 
@@ -56,22 +53,19 @@ To compile the library, follow these steps:
    ```
    This will create the `libft.a` file.
 
-3. For bonus functions, use:
-   ```bash
-   make bonus
-   ```
 
-4. To clean object files:
+
+3. To clean object files:
    ```bash
    make clean
    ```
 
-5. To clean all generated files:
+4. To clean all generated files:
    ```bash
    make fclean
    ```
 
-6. To rebuild the library:
+5. To rebuild the library:
    ```bash
    make re
    ```
@@ -141,6 +135,6 @@ The functions most prone to memory issues are:
 - `ft_split` (ensure all allocated strings and the array itself are freed)
 - `ft_substr` (check edge cases like empty strings or out-of-bounds requests)
 - `ft_strjoin` (verify proper allocation and handling of edge cases)
-- Bonus list functions (ensure proper cleanup in `ft_lstclear` and `ft_lstdelone`)
+
 
 By thoroughly testing with Valgrind, you can ensure your library functions handle memory correctly and efficiently.
