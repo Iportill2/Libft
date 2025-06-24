@@ -89,6 +89,10 @@ Se proporciona un archivo de prueba completo (`test.c`) para probar todas las fu
    ```bash
    gcc -Wall -Wextra -Werror test.c -L. -lft -o test_libft
    ```
+   
+   **¡Importante!** No olvides incluir `-L. -lft` para enlazar con tu biblioteca libft.a. 
+   - `-L.` indica al compilador que busque bibliotecas en el directorio actual
+   - `-lft` indica que enlace con la biblioteca `libft.a`
 
 3. Ejecuta la prueba:
    ```bash
@@ -101,6 +105,14 @@ Se proporciona un archivo de prueba completo (`test.c`) para probar todas las fu
    ```
 
 Los resultados de las pruebas se mostrarán en la terminal, y las funciones de descriptor de archivo escribirán su salida en `test_output.txt`.
+
+### Errores comunes
+
+Si al compilar el test obtienes errores como "referencia a `ft_isalpha' sin definir", significa que no estás enlazando correctamente con la biblioteca. Asegúrate de:
+
+1. Haber compilado la biblioteca con `make`
+2. Incluir los parámetros `-L. -lft` en el comando de compilación
+3. Si sigues teniendo problemas, verifica que `libft.a` exista en tu directorio
 
 ## Comprobación de Memoria con Valgrind
 

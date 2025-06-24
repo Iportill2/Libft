@@ -89,6 +89,10 @@ A comprehensive test file (`test.c`) is provided to test all functions in the li
    ```bash
    gcc -Wall -Wextra -Werror test.c -L. -lft -o test_libft
    ```
+   
+   **Important!** Don't forget to include `-L. -lft` to link with your libft.a library.
+   - `-L.` tells the compiler to look for libraries in the current directory
+   - `-lft` tells it to link with the `libft.a` library
 
 3. Run the test:
    ```bash
@@ -101,6 +105,14 @@ A comprehensive test file (`test.c`) is provided to test all functions in the li
    ```
 
 The test output will be displayed in the terminal, and file descriptor functions will write their output to `test_output.txt`.
+
+### Common Issues
+
+If you get errors like "undefined reference to `ft_isalpha'", it means you're not linking correctly with the library. Make sure to:
+
+1. Compile the library first with `make`
+2. Include the `-L. -lft` parameters in your compilation command
+3. If you still have issues, verify that `libft.a` exists in your directory
 
 ## Memory Testing with Valgrind
 
