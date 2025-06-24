@@ -35,10 +35,7 @@ La biblioteca incluye las siguientes categorías de funciones:
 5. Funciones de descriptor de archivo:
    - `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
 
-6. Funciones de listas enlazadas (bonus):
-   - `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`
-   - `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`
-   - `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+
 
 ## Compilación
 
@@ -141,6 +138,6 @@ Las funciones más propensas a problemas de memoria son:
 - `ft_split` (asegúrate de liberar todas las cadenas asignadas y el array)
 - `ft_substr` (verifica casos límite como cadenas vacías o solicitudes fuera de límites)
 - `ft_strjoin` (verifica la asignación adecuada y el manejo de casos límite)
-- Funciones de listas bonus (asegúrate de que `ft_lstclear` y `ft_lstdelone` limpien correctamente)
+
 
 Al probar con Valgrind, puedes garantizar que tus funciones manejen la memoria correcta y eficientemente.
