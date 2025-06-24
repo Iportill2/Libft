@@ -53,22 +53,19 @@ Para compilar la biblioteca, sigue estos pasos:
    ```
    Esto creará el archivo `libft.a`.
 
-3. Para las funciones bonus, usa:
-   ```bash
-   make bonus
-   ```
 
-4. Para limpiar los archivos objeto:
+
+3. Para limpiar los archivos objeto:
    ```bash
    make clean
    ```
 
-5. Para limpiar todos los archivos generados:
+4. Para limpiar todos los archivos generados:
    ```bash
    make fclean
    ```
 
-6. Para reconstruir la biblioteca:
+5. Para reconstruir la biblioteca:
    ```bash
    make re
    ```
